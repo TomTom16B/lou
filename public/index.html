@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lou</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Front -->
+        <div class="screen active" id="front">
+            <button class="disabled" id="home-btn"><span>⌂</span></button>
+            <!-- Start -->
+            <div class="screen active" id="start-screen">
+                <h1>Pour mon amoureuse</h1>
+
+                <button id="start-btn">Visiter le super site</button>
+            </div>
+            
+            <!-- Menu -->
+            <div class="screen" id="menu">
+                <div class="tab" id="menu-tab">
+                    <div class="tab-btn">
+                        <button id="upload-btn">Upload</button>
+                        <button id="checklist-btn">Checklist</button>
+                        <button id="paf-btn">LE PAF</button>
+                    </div>
+                </div>
+                <button id="open-tab-btn" class="" >//</button>
+                <button id="close-tab-btn" class="disabled">X</button>
+                <h1>Lou's Website</h1>
+                <p>Lou je t'aime j'ai mis beaucoup de temps et d'amour dans ce site j'éspère qu'il te plaira <3</p>
+            </div>
+
+            <!-- Upload -->
+            <div class="screen" id="upload-screen">
+                <div class="upload">
+                    <h1>Upload from here.</h1>
+                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                        <input type="file" name="file" required>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="screen" id="paf-screen">
+                <canvas id="canvas" width="1200" height="1000"></canvas>
+                <script src="paf.js"></script>
+            </div>
+
+            <!-- Checklist -->
+            <div class="screen" id="checklist-screen">
+                <div class="checklists">
+
+                    <div class="checklist">
+                        <div class="checklist-header">
+                            <h3>La levrette</h3>
+                            <button class="check-btn">✓</button>
+                        </div>
+                        <img src="images/lele.svg" alt="levrette">
+                    </div>
+
+
+                    <div class="checklist">
+                        <div class="checklist-header">
+                            <h3>Le 69</h3>
+                            <button class="check-btn">✓</button>
+                        </div>
+                        <img src="images/69.svg" alt="69">
+                    </div>
+
+
+                    <div class="checklist">
+                        <div class="checklist-header">
+                            <h3>Table de la cuisine</h3>
+                            <button class="check-btn">✓</button>
+                        </div>
+                        <img src="images/cuisine.svg" alt="cuisine">
+                    </div>
+
+
+                    <div class="checklist">
+                        <div class="checklist-header">
+                            <h3>Andromaque</h3>
+                            <button class="check-btn">✓</button>
+                        </div>
+                        <img src="images/andromaque.svg" alt="andromaque">
+                    </div>
+
+
+                    <div class="checklist">
+                        <div class="checklist-header">
+                            <h3>Enclume</h3>
+                            <button class="check-btn">✓</button>
+                        </div>
+                        <img src="images/enclume.svg" alt="enclume">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
